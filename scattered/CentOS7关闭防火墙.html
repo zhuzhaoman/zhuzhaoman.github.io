@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CentOS7关闭防火墙 | believer</title>
+    <meta name="description" content="永远相信未来是光明美好的">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?30b874f902cd655b376c236471bcbdb4";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    
+    <link rel="preload" href="/assets/css/0.styles.6b89b168.css" as="style"><link rel="preload" href="/assets/js/app.c061eee6.js" as="script"><link rel="preload" href="/assets/js/2.33424483.js" as="script"><link rel="preload" href="/assets/js/22.0a91f7b4.js" as="script"><link rel="prefetch" href="/assets/js/10.fef97170.js"><link rel="prefetch" href="/assets/js/11.ad94200f.js"><link rel="prefetch" href="/assets/js/12.6f9dda68.js"><link rel="prefetch" href="/assets/js/13.c0a86f36.js"><link rel="prefetch" href="/assets/js/14.c8004382.js"><link rel="prefetch" href="/assets/js/15.10cb4267.js"><link rel="prefetch" href="/assets/js/16.395fc6df.js"><link rel="prefetch" href="/assets/js/17.92e04a7e.js"><link rel="prefetch" href="/assets/js/18.fa844808.js"><link rel="prefetch" href="/assets/js/19.d5800d9d.js"><link rel="prefetch" href="/assets/js/20.fb7fdcf5.js"><link rel="prefetch" href="/assets/js/21.4cd57e77.js"><link rel="prefetch" href="/assets/js/23.ee5415ab.js"><link rel="prefetch" href="/assets/js/24.d92ff253.js"><link rel="prefetch" href="/assets/js/25.f1698d88.js"><link rel="prefetch" href="/assets/js/26.5a598689.js"><link rel="prefetch" href="/assets/js/27.e19eae73.js"><link rel="prefetch" href="/assets/js/28.cbe6579e.js"><link rel="prefetch" href="/assets/js/29.3a74469a.js"><link rel="prefetch" href="/assets/js/3.16810944.js"><link rel="prefetch" href="/assets/js/30.ae7f45a6.js"><link rel="prefetch" href="/assets/js/31.72983100.js"><link rel="prefetch" href="/assets/js/32.afb5d232.js"><link rel="prefetch" href="/assets/js/33.9cbf7ab8.js"><link rel="prefetch" href="/assets/js/34.57de221b.js"><link rel="prefetch" href="/assets/js/35.7e6be39f.js"><link rel="prefetch" href="/assets/js/36.d1dcf59f.js"><link rel="prefetch" href="/assets/js/37.03913c61.js"><link rel="prefetch" href="/assets/js/38.f600538c.js"><link rel="prefetch" href="/assets/js/39.f7b7746a.js"><link rel="prefetch" href="/assets/js/4.825d294c.js"><link rel="prefetch" href="/assets/js/40.aea2da9e.js"><link rel="prefetch" href="/assets/js/41.68c7cc43.js"><link rel="prefetch" href="/assets/js/42.0fe77681.js"><link rel="prefetch" href="/assets/js/43.bf598545.js"><link rel="prefetch" href="/assets/js/44.8c06d6a0.js"><link rel="prefetch" href="/assets/js/45.538b90a2.js"><link rel="prefetch" href="/assets/js/46.d9538f99.js"><link rel="prefetch" href="/assets/js/47.ba1e58da.js"><link rel="prefetch" href="/assets/js/5.f64677a9.js"><link rel="prefetch" href="/assets/js/6.de603207.js"><link rel="prefetch" href="/assets/js/7.76fde3df.js"><link rel="prefetch" href="/assets/js/8.da6a9663.js"><link rel="prefetch" href="/assets/js/9.d48f8937.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b89b168.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">believer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/scattered/" class="nav-link router-link-active">
+  零散文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础教程" class="dropdown-title"><span class="title">基础教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basics/Python基础/" class="nav-link">
+  Python基础
+</a></li></ul></div></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link">
+  前端教程
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link">
+  后端教程
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="通用工具" class="dropdown-title"><span class="title">通用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  SpringBoot定时任务表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhuzhaoman" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/scattered/" class="nav-link router-link-active">
+  零散文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础教程" class="dropdown-title"><span class="title">基础教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basics/Python基础/" class="nav-link">
+  Python基础
+</a></li></ul></div></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link">
+  前端教程
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link">
+  后端教程
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="通用工具" class="dropdown-title"><span class="title">通用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://cron.qqe2.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  SpringBoot定时任务表达式
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhuzhaoman" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>SpringBoot相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Linux相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/scattered/CentOS7安装JDK.html" class="sidebar-link">CentOS7安装JDK</a></li><li><a href="/scattered/CentOS7关闭防火墙.html" class="active sidebar-link">CentOS7关闭防火墙</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/scattered/CentOS7关闭防火墙.html#_1-查看防火墙状态" class="sidebar-link">1.查看防火墙状态</a></li><li class="sidebar-sub-header"><a href="/scattered/CentOS7关闭防火墙.html#_2-关闭运行的防火墙" class="sidebar-link">2.关闭运行的防火墙</a></li><li class="sidebar-sub-header"><a href="/scattered/CentOS7关闭防火墙.html#_3-查看防火墙状态" class="sidebar-link">3.查看防火墙状态</a></li><li class="sidebar-sub-header"><a href="/scattered/CentOS7关闭防火墙.html#_4-禁止防火墙开启" class="sidebar-link">4.禁止防火墙开启</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nginx相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Keepalived相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>LVS相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Redis相关</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="centos7关闭防火墙"><a href="#centos7关闭防火墙" class="header-anchor">#</a> CentOS7关闭防火墙</h1> <h2 id="_1-查看防火墙状态"><a href="#_1-查看防火墙状态" class="header-anchor">#</a> 1.查看防火墙状态</h2> <div class="language- extra-class"><pre class="language-text"><code>systemctl status firewalld.service
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>执行后可以看到绿色字样标注的active（running），说明防护墙开启状态</p></div> <h2 id="_2-关闭运行的防火墙"><a href="#_2-关闭运行的防火墙" class="header-anchor">#</a> 2.关闭运行的防火墙</h2> <div class="language- extra-class"><pre class="language-text"><code>systemctl stop firewalld.service
+</code></pre></div><h2 id="_3-查看防火墙状态"><a href="#_3-查看防火墙状态" class="header-anchor">#</a> 3.查看防火墙状态</h2> <div class="language- extra-class"><pre class="language-text"><code>systemctl status firewalld.service
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>可以看到，disavtive（dead）的字样，说明防火墙已经关闭</p></div> <h2 id="_4-禁止防火墙开启"><a href="#_4-禁止防火墙开启" class="header-anchor">#</a> 4.禁止防火墙开启</h2> <div class="language- extra-class"><pre class="language-text"><code>systemctl disable firewalld.service
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/scattered/CentOS7安装JDK.html" class="prev">
+        CentOS7安装JDK
+      </a></span> <span class="next"><a href="/scattered/CentOS7安装nginx.html">
+        CentOS7安装nginx1.16.1
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c061eee6.js" defer></script><script src="/assets/js/2.33424483.js" defer></script><script src="/assets/js/22.0a91f7b4.js" defer></script>
+  </body>
+</html>
